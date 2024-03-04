@@ -1,0 +1,46 @@
+git config --global user.name "User Name here"
+git config --global user.email  usersemail@whatever.com
+git config --global init.default branch main
+git config -h
+git status 
+.gitignore  <---- a file that specifies what files or file types to ignore>
+git add <file> to add a file to being watched for changes "staged"
+git add .  <---- adds all files in the directory to be watched>
+
+git commit -m "Message for the following changes"
+
+git diff <---- shows what changes have been made to the staged files>
+
+[The 3 states of files in a repo]
+	Working files -- making edits
+	Staging -- Place where modified files sit until you are ready to commit them.
+	Commit -- added to change log
+
+git rm "filename" <----remove file>
+git restore "deletedfile"  <----restore deleted file>
+git mv "file" "newfilename" <---- rename file>
+
+git log -p
+git log --oneline
+git reset <hashtag>  <---- to revert to a previous commit>
+
+git rebase -i --root <---- modify how commits look>
+
+git branch <branch name> <---- Starts a new branch off the main, where other users can make edits and such, bug fixing, testing purposes>
+git switch <branch name> <---- switch branch>
+git merge -m "Merge fix message" <branch name>
+git branch -d <branch name> <---- deletes branch>
+git switch -c <new branch name> <---- creates new branch and switches right to it>
+
+[adding repo from local computer to github account from command line]
+git remote add origin <your github repository url>
+git branch -M main 
+git push -u origin main <---- pushes local repo Main to your github>
+git push --all <--- pushes all branches to github>
+
+pull requests have to be reviewed by the owner before commits can be merged to the main.
+
+git fetch <-- to gather all remote made changes>
+get merge <---- merge remote to local machine>
+or
+git pull <---- does both above commands>
